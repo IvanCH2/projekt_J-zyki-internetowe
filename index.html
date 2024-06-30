@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Search</h1>
+        <button id="login">Login with Spotify</button>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Search for Music</h2>
+            <form id="search-form">
+                <input type="text" id="search-query" placeholder="Enter song, artist, or album" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="results"></div>
+        </section>
+        <section class="playlist-section">
+            <h2>Create a Playlist</h2>
+            <form id="playlist-form">
+                <input type="text" id="playlist-name" placeholder="Playlist name" required>
+                <button type="submit">Create</button>
+            </form>
+            <h2>My Playlists</h2>
+            <select id="playlists"></select>
+            <div id="playlist-tracks"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
